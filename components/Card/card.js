@@ -13,7 +13,7 @@ const createPaisCard = (pais, container) => {
       <h3>${pais.name.common}</h3>
       <p><strong>Capital:</strong> ${pais.capital}</p>
       <p><strong>Population:</strong> ${separator(pais.population)}</p>
-      <button>Ver más</button>
+      <button class="moreInfoBtn${paisID.toLowerCase()}">Ver más</button>
     </div>
     <div class="modalOverlay">
       <div class="modalContainer" id=${paisID.toLowerCase()}>
@@ -24,6 +24,14 @@ const createPaisCard = (pais, container) => {
     </div>
   `;
   container.appendChild(paisInfo);
+
+  const moreInfoBtn = document.querySelector(
+    `.moreInfoBtn${pais.fifa.toLowerCase()}`
+  );
+  console.log(moreInfoBtn);
+  moreInfoBtn.addEventListener('click', () => {
+    console.log('más info del país: ' + pais.name.common);
+  });
 };
 
 export default createPaisCard;
