@@ -27,11 +27,17 @@ const createPaisCard = (pais, container) => {
   const modalOverlay = document.querySelector(
     `.modalOverlay${pais.fifa.toLowerCase()}`
   );
-  console.log(moreInfoBtn);
-  console.log(modalOverlay);
   moreInfoBtn.addEventListener('click', () => {
     console.log('más info del país: ' + pais.name.common);
     createModal(pais, paisID, modalOverlay);
+    modalOverlay.classList.add('open-modal');
+    const cerrar = document.querySelector('.close-btn');
+    console.log(cerrar);
+    cerrar.addEventListener('click', () => {
+      console.log('cerrando');
+      modalOverlay.classList.remove('open-modal');
+      modalOverlay.removeChild(modalOverlay.firstChild);
+    });
   });
 };
 
