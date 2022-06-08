@@ -1,8 +1,9 @@
 import createPaisCard from './components/Card/card.js';
 
-/* API RESTCOUNTRY */
+const spinner = document.querySelector('#spinner');
 const paisesContainer = document.querySelector('.paisesContainer');
 
+/* API RESTCOUNTRY */
 const Pais_URL = 'https://restcountries.com/v3.1/lang/spa';
 
 fetch(Pais_URL)
@@ -11,5 +12,7 @@ fetch(Pais_URL)
     const newResJson = resJson.splice(0, 12);
     for (let pais of newResJson) {
       createPaisCard(pais, paisesContainer);
+      /* Sipnner */
+      spinner.style.display = 'none';
     }
   });
