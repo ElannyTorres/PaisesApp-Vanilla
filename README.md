@@ -15,8 +15,8 @@ El presente proyecto nos permite consumir un API [REST COUNTRIES](https://restco
 ![img](./img/screen.jpg)
 
 ## 2. Resumen del proyecto
-Elobara una página web que muestre una lista de 12 países con sus respectivas capitales y población actual.
-Deberás usar etiquetas HTML5 para maquetar la página y mostrar los contenidos.
+Página web que muestra una lista de 12 países con sus respectivas capitales y población actual.
+Así como la opción de ver el continente en el que se encuentra en un modal simple.
 
 ## 3. Consideraciones técnicas
 - La lista de los países debe estar en "MainContent", utiliza una grilla.
