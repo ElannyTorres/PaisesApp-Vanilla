@@ -25,7 +25,10 @@ Así como la opción de ver el continente en el que se encuentra en un modal sim
 - Incluir hojas de estilo propias (CSS). Minimalista y a la vez atractivo.
 - Dinamismo: al hacer click debe mostrarse un modal simple con el continente al que pertenece el país.
 - No usar frameworks, solo JS nativo y CSS3.
-
+- Responsive con los siguientes breakpoints:
+    1) Para teléfonos móviles - un ancho máximo de 599px.
+    2) Para tablets un ancho mínimo de 600px.
+    3) Para desktop un ancho mínimo de 768px.
 ## 4. Herramientas usadas
 Para el desarrollo del presente proyecto se utilizó:
 * [Git](https://git-scm.com/)
