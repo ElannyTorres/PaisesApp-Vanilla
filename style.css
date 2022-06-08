@@ -11,6 +11,9 @@
   font-family: 'Roboto Slab', serif;
   user-select: none;
 }
+html {
+  font-size: 62.5%;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -18,17 +21,23 @@ body {
 
 /* Header */
 header {
+  width: 100%;
   padding: 1em;
+  top: 0;
+	left: 0;
   background-color: var(--MinCream);
   color: var(--GhostWhite);
+  position: fixed;
+  z-index:2;
 }
 
 /* Contenido principal */
 section {
+  margin-top: 4rem;
   padding-top: 1rem;
   text-align: center;
 }
-section > p {
+section > p, section > h2 {
   margin: 1rem 2rem;
   line-height: 1.5rem;
 }
@@ -37,8 +46,6 @@ section > p {
   padding: 1em;
   border-radius: 15px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
   background-color: var(--ShinyShamrock);
 }
 /* Estilos de card */
@@ -88,6 +95,23 @@ button:hover {
   line-height: 2rem;
 }
 
+/* Go Up Button */
+#goUpBtn {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  z-index: 9;
+  border: none;
+  outline: none;
+  background-color: var(--GhostWhite);
+  color: black;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 3rem;
+  font-size: 1.5rem;
+}
+
 /* Footer */
 footer {
   padding: 1em;
@@ -95,4 +119,17 @@ footer {
   background-color: var(--MinCream);
   color: var(--GhostWhite);
   background-size: cover;
+}
+
+@media only screen and (min-width: 600px) {
+  .paisesContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .paisesContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
