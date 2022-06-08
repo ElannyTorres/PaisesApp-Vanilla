@@ -2,9 +2,7 @@
 :root {
   --MinCream: #243e36;
   --ShinyShamrock: #7ca982;
-  --MetallicGold: #c2a83e;
   --GhostWhite: #ecebf3;
-  --OrangeWeb: #fca311;
 }
 * {
   margin: 0;
@@ -86,9 +84,11 @@ button:hover {
 .modalContainer {
   padding: 1rem;
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--ShinyShamrock);
+  line-height: 2rem;
 }
 
+/* Footer */
 footer {
   padding: 1em;
   width: 100%;
