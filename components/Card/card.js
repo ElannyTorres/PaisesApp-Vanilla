@@ -15,7 +15,7 @@ const createPaisCard = (pais, container) => {
       <h3>${pais.name.common}</h3>
       <p><strong>Capital:</strong> ${pais.capital}</p>
       <p><strong>Population:</strong> ${separator(pais.population)}</p>
-      <button class="moreInfoBtn${paisID.toLowerCase()}">Ver más</button>
+      <button class="moreInfoBtn${paisID.toLowerCase()}">More Info</button>
     </div>
     <div class="modalOverlay modalOverlay${paisID.toLowerCase()}"></div>
   `;
