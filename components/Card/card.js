@@ -1,3 +1,5 @@
+import { createModal } from '../Modal/modal.js';
+
 function separator(numb) {
   var str = numb.toString().split('.');
   str[0] = str[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -15,22 +17,21 @@ const createPaisCard = (pais, container) => {
       <p><strong>Population:</strong> ${separator(pais.population)}</p>
       <button class="moreInfoBtn${paisID.toLowerCase()}">Ver más</button>
     </div>
-    <div class="modalOverlay">
-      <div class="modalContainer" id=${paisID.toLowerCase()}>
-        <h3>${pais.name.common} se encuentra en:</h3>
-        <p>${pais.continents}</p>
-        <button class="close-btn">X</button>
-      </div>
-    </div>
+    <div class="modalOverlay modalOverlay${paisID.toLowerCase()}"></div>
   `;
   container.appendChild(paisInfo);
 
   const moreInfoBtn = document.querySelector(
     `.moreInfoBtn${pais.fifa.toLowerCase()}`
   );
+  const modalOverlay = document.querySelector(
+    `.modalOverlay${pais.fifa.toLowerCase()}`
+  );
   console.log(moreInfoBtn);
+  console.log(modalOverlay);
   moreInfoBtn.addEventListener('click', () => {
     console.log('más info del país: ' + pais.name.common);
+    createModal(pais, paisID, modalOverlay);
   });
 };
 
