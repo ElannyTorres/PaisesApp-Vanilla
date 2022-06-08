@@ -13,5 +13,3 @@ fetch(Pais_URL)
       createPaisCard(pais, paisesContainer);
     }
   });
-
-/* MODAL FUNCTION */
