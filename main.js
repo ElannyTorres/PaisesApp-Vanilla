@@ -13,3 +13,20 @@ fetch(Pais_URL)
       createPaisCard(pais, paisesContainer);
     }
   });
+
+const goUpBtn = document.getElementById('goUpBtn');
+window.onscroll = function () {
+  scrollFunction();
+};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    goUpBtn.style.display = 'block';
+  } else {
+    goUpBtn.style.display = 'none';
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+goUpBtn.onclick = function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
