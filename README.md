@@ -3,9 +3,9 @@
 ## Índice
 
 * [1. Introducción](#1-introducción)
-* [2. Resumen del proyecto](#1-resumen-del-proyecto)
+* [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Consideraciones técnicas](#3-consideraciones-técnicas)
-* [4. Herramientas usadas](#1-herramientas-usadas)
+* [4. Herramientas usadas](#4-herramientas-usadas)
 
 ***
 
@@ -29,6 +29,7 @@ Así como la opción de ver el continente en el que se encuentra en un modal sim
     1) Para teléfonos móviles - un ancho máximo de 599px.
     2) Para tablets un ancho mínimo de 600px.
     3) Para desktop un ancho mínimo de 768px.
+    
 ## 4. Herramientas usadas
 Para el desarrollo del presente proyecto se utilizó:
 * [Git](https://git-scm.com/)
